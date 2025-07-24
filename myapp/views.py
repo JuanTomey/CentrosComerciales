@@ -14,3 +14,20 @@ def vista_centros_comercial(request, name_cc):
     centro_comercial = CentroComercial.objects.get(nombre=name_cc)
     tiendas = centro_comercial.tiendas.all()
     return render(request, 'vista_centros_comercial.html', {'centro_comercial': centro_comercial, 'tiendas': tiendas})
+
+def profile_view(request):
+    if request.method == 'POST':
+        data = request.POST
+        new_first_name = data['first_name']
+        new_last_name = data['last_name']
+        new_email = data['email']
+        user_id = request.user.id
+
+        user = User.objects.get(id=user_id)
+        user.first_name = new_first_name
+        user.last_name = new_last_name
+        user.email = new_email
+        user.save()
+        return JsonResponse({'status': 'success'})
+
+    return render(request, 'profile.html')

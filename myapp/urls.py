@@ -11,5 +11,5 @@ urlpatterns = [
     path('centros_comerciales', views.lista_centros_comerciales, name='lscc'),
     path('tiendas', views.lista_centros_tiendas, name='tiendas'),
     path('cc/<str:name_cc>', views.vista_centros_comercial, name='vista_centros_comercial' ),
-    
+    path('me', views.profile_view, name='profile'),
 ]
