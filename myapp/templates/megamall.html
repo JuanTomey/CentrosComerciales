@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamall</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="imagenes/amb.png" type="image/x-icon">
+</head>
+<body>
+    <main class="slides">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="{% static 'imagenes/amb.png' %}" alt="amb">
+                    <h1 class="alias">Centros Comerciales</h1>
+                </div>
+            </div>
+        </header>
+    <div class="container">
+        <section class="slide" id="megamall">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/megamall.jpg' %}" alt="CC Megamall">
+                <h1 class="introduce">
+                    <span>Centro Comercial Megamall</span>
+                    <span>Historia y dimensiones: Inaugurado en 2007; cuenta con 3 niveles, más de 100 establecimientos y 573 cupos de parqueo en dos sótanos</span>
+                    <span>Oferta variada: Hipermercado (Jumbo o Carrefour), cine CineMark, sala de juegos “Happy City”, casino Bongos, heladerías y cafés</span> 
+                    <span>Ambiente familiar: Diseñado para toda la familia, combinando entretenimiento y compras en un único lugar </span>
+                    <a href="{% url 'home' %}" class="button">Volver</a>
+                </h1>
+            </article>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

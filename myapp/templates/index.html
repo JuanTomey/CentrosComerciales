@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centros Comerciales AMB</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagenes/amb.png' %}" type="image/x-icon">
+</head>
+<body>
+    <main class="slides">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="{% static 'imagenes/amb.png' %}" alt="amb">
+                    <h1 class="alias">Centros Comerciales</h1>
+                </div>
+                <nav class="menu">
+                    <a href="#cacique">Cacique</a>
+                    <a href="#megamall">Megamall</a>
+                    <a href="#laquinta">La Quinta</a>
+                    <a href="#canaveral">Cañaveral</a>
+                </nav>
+            </div>
+        </header>
+    <div class="container">
+        <section class="slide" id="cacique">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/cacique.webp' %}" alt="CC Cacique">
+                <h1 class="introduce">
+                    <span>Centro Comercial Cacique</span>
+                    <span>Es el más grande del oriente colombiano. Ofrece muchas tiendas, zonas infantiles, cine, hotel y torre empresarial. Es ideal para planes familiares y recibe millones de visitantes al año.</span> 
+                    <a href="{% url 'cacique' %}" class="button">Visitar Pagina Web</a>
+                </h1>
+            </article>
+        </section>
+        <section class="slide" id="megamall">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/megamall.jpg' %}" alt="CC Megamall">
+                <h1 class="introduce">
+                    <span>Centro Comercial Megamall</span>
+                    <span>Está en Bucaramanga. Tiene cine, supermercado, zona de juegos y más de 100 tiendas. Es ideal para ir en familia y disfrutar de un día completo de entretenimiento.</span>
+                    <a href="{% url 'megamall' %}" class="button">Visitar Pagina Web</a>
+                </h1>
+                <div class="box img-bg"></div>
+            </article>
+        </section>
+        <section class="slide" id="laquinta">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/laquinta.jpg' %}" alt="CC La Quinta">
+                <h1 class="introduce">
+                    <span>Centro Comercial La Quinta</span>
+                    <span>Ubicado en Cabecera del Llano. Tiene un estilo boutique y muchas marcas reconocidas. Es tranquilo, acogedor y perfecto para compras de moda o reuniones informales.</span>
+                    <a href="{% url 'laquinta' %}" class="button">Visitar Pagina Web</a>
+                </h1>
+            </article>
+        </section>
+        <section class="slide" id="canaveral">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/canaveral.jpeg' %}" alt="CC Cañaveral">
+                <h1 class="introduce">
+                    <span>Centro Comercial Cañaveral</span>
+                    <span>Está en Floridablanca. Tiene tiendas, cine, juegos infantiles y zona de comidas. Está en expansión y será más moderno, con oficinas, auditorio y diseño sostenible. Es pet-friendly.</span> 
+                    <a href="{% url 'canaveral' %}" class="button">Visitar Pagina Web</a>
+                </h1>
+            </article>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

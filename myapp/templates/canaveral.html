@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cañaveral</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="imagenes/amb.png" type="image/x-icon">
+</head>
+<body>
+    <main class="slides">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="{% static 'imagenes/amb.png' %}" alt="amb">
+                    <h1 class="alias">Centros Comerciales</h1>
+                </div>
+            </div>
+        </header>
+    <div class="container">
+        <section class="slide" id="canaveral">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/canaveral.jpeg' %}" alt="CC Cañaveral">
+                <h1 class="introduce">
+                    <span>Centro Comercial Cañaveral</span>
+                    <span>Servicios: Cuenta con Almacén Éxito, cine (Cine Colombia), amplia zona infantil, plaza de comidas, casinos, bancos, peluquerías, ópticas, estaciones de recarga de autos eléctricos y espacios pet‑friendly</span> 
+                    <span>Infraestructura sostenible: Diseño biofílico, paneles fotovoltaicos y aire acondicionado central</span>
+                    <a href="{% url 'home' %}"  class="button">Volver</a>
+                </h1>
+            </article>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

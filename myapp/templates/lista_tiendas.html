@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Tiendas de Centros Comerciales de Bucaramanga {% endblock %}
+
+{% block container %}
+
+<div class="container mt-4">
+
+  <div class="jumbo">
+    <h1>Tiendas en Centros Comerciales</h1>
+    <p>locales de los centros comerciales </p>
+  </div>
+  <div class="row">
+    {% for tienda in tiendas %}
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="color: rgb(53, 53, 53);">{{ tienda.nombre }}</h5>
+          <p class="card-text"> Categoria: {{ tienda.categoria }} </p>
+          <p class="card-text"> Se encuentra ubicado en el Centro Comercial {{ tienda.centro_comercial }} </p>
+          {% if tienda.url %}
+          <a href="{{ tienda.url }}" target="_blank" class="btn btn-success">Pagina Oficial</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

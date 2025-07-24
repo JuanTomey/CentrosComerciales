@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacique</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="imagenes/amb.png" type="image/x-icon">
+</head>
+<body>
+    <main class="slides">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="{% static 'imagenes/amb.png' %}" alt="amb">
+                    <h1 class="alias">Centros Comerciales</h1>
+                </div>
+            </div>
+        </header>
+    <div class="container">
+        <section class="slide" id="cacique">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/cacique.webp' %}" alt="CC Cacique">
+                <h1 class="introduce">
+                    <span>Centro Comercial Cacique</span>
+                    <span>Ubicación y tamaño: En el corazón metropolitano de Bucaramanga, es el centro comercial más grande del oriente de Colombia, con más de 12 millones de visitantes al año </span> 
+                    <span>Ambiente: Familiar, con una oferta variada de tiendas, entretenimiento infantil y programas de impacto social relacionados con niños rurales y del ICBF</span>
+                    <span>Servicios: Comida, cine, amplias zonas comunes y un hotel y torre empresarial integrados al complejo.</span>
+                    <a href="{% url 'home' %}" class="button">Volver</a>
+                </h1>
+            </article>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Quinta</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="imagenes/amb.png" type="image/x-icon">
+</head>
+<body>
+    <main class="slides">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="{% static 'imagenes/amb.png' %}" alt="amb">
+                    <h1 class="alias">Centros Comerciales</h1>
+                </div>
+            </div>
+        </header>
+    <div class="container">
+        <section class="slide" id="laquinta">
+            <article class="slide-container" >
+                <img class="avatar" src="{% static 'imagenes/laquinta.jpg' %}" alt="CC La Quinta">
+                <h1 class="introduce">
+                    <span>Centro Comercial La Quinta</span>
+                    <span>Perfil boutique en Cabecera del Llano: Se alza en uno de los sectores más cotizados, con seis pisos de locales y una plaza de comidas llamada Terraza Q</span> 
+                    <span>Oferta de marcas: Aproximadamente 100 locales, incluyendo marcas como Diesel, Vélez, Arturo Calle; ideal para compras de moda y regalos exclusivos</span>
+                    <span>Ambiente acogedor: Opiniones destacan su atmósfera ideal para coworking casual y reuniones, con buen acceso y tranquilidad</span>
+                    <a href="{% url 'home' %}" class="button">Volver</a>
+                </h1>
+            </article>
+        </section>
+    </div>
+    </main>
+</body>
+</html>
