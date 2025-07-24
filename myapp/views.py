@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import CentroComercial, Tienda
+from .models import CentroComercial, Tienda, Archivo
 
 # Create your views here.
 def lista_centros_comerciales(request):
