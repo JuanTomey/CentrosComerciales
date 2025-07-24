@@ -21,6 +21,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='centrocomercial',
             name='descripcion',
-            field=models.CharField(blank=True, null=True),
+            field=models.TextField(blank=True, null=True),
         ),
     ]
