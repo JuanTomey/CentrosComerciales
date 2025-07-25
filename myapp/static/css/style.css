@@ -1,0 +1,20 @@
+:root {
+    --color-blue: #93c3dc;
+    --color-yellow: #fae100;
+    --color-darkblue: #1e2345;
+}
+
+body {
+  background-color: #edecec;
+}
+.card {
+  margin-bottom: 1rem;
+}
+.jumbo {
+  background-color: var(--color-yellow);
+  color: var(--color-darkblue);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
