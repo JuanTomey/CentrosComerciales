@@ -18,3 +18,15 @@ body {
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.btn-primary{
+    border: none;
+    background-color: var(--color-yellow);
+    color: var(--color-darkblue);
+}
+
+.btn-primary:hover{
+    border: none;
+    background-color: var(--color-darkblue);
+    color: var(--color-yellow);
+}
